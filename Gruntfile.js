@@ -433,6 +433,10 @@ module.exports = function (grunt) {
     ]);
   });
 
+  grunt.registerTask('deploy', [
+    's3'
+  ]);
+
   grunt.registerTask('build', [
     'clean:dist',
     'wiredep',

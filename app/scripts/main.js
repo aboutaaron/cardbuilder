@@ -19,5 +19,5 @@
 
     $('#sometext').on('change keypress paste focus textInput input', function () {
         $('.message').text(this.value);
-    })
+    });
 })();
