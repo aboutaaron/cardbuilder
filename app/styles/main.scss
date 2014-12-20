@@ -3,7 +3,7 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 .result {
-  background-color: papayawhip;
+  //background-color: papayawhip;
 }
 .chosen-image {
   padding: 20px;
@@ -13,4 +13,15 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
   font-size: 3rem;
   text-align: center;
   padding: 40px;
+}
+
+.pattern {
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+
+  &:hover {
+    cursor: pointer;
+    border: 1px solid #222;
+  }
 }

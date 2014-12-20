@@ -6,7 +6,7 @@
             var reader = new FileReader();
 
             reader.onload = function (e) {
-                $('img').attr('src', e.target.result);
+                $('.chosen-image').attr('src', e.target.result);
             };
 
             reader.readAsDataURL(input.files[0]);
@@ -19,5 +19,10 @@
 
     $('#sometext').on('change keypress paste focus textInput input', function () {
         $('.message').text(this.value);
+    });
+
+    $('.pattern').on('click', function (event) {
+        var bg = 'url('+event.target.src+')';
+        $('.result').css('background-image', bg);
     });
 })();
