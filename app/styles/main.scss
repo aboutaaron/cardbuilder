@@ -2,3 +2,15 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 // bower:scss
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
+.result {
+  background-color: papayawhip;
+}
+.chosen-image {
+  padding: 20px;
+}
+.message {
+  font-family: 'Georgia', serif;
+  font-size: 3rem;
+  text-align: center;
+  padding: 40px;
+}
