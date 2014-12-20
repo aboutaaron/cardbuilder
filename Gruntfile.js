@@ -67,6 +67,19 @@ module.exports = function (grunt) {
         ]
       }
     },
+    aws: grunt.file.readJSON('credentials.json'),
+    s3: {
+      options: {
+        accessKeyId: '<%= aws.accessKeyId %>',
+        secretAccessKey: '<%= aws.secretAccessKey %>',
+        bucket: 'www-acwx-net'
+      },
+      dist: {
+        cwd: 'dist/',
+        src: '**',
+        dest: 'cardbuilder/'
+      }
+    },
 
     // The actual grunt server settings
     connect: {
